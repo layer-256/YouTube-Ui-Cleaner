@@ -14,8 +14,6 @@ body[extention-ellipsis-under-vid="true"] #button-shape,
 #video-summary,
 /* A sidebar with a bunch of buttons on the channel page */
 #guide,
-/* “Create” button in the header */
-#buttons ytd-button-renderer,
 /* about these results info in search results */
 #about-these-results,
 /* removes shorts chip button under search input in search results page */
@@ -63,34 +61,50 @@ div.ytp-autonav-toggle-button-container, button[data-tooltip-target-id="ytp-auto
 .ytd-playlist-header-renderer,
 /* message stating that unavailable videos are hidden in “Watch Later” */
 ytd-alert-with-button-renderer[type="INFO"],
-/* Removing of Buttons "Comments" and "Share" (Inside a Full-Screen Video) */
+
+/* “Create” button in the header */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="Создать"]), /* ru */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="Create"]), /* eng */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="만들기"]), /* korean */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="作成"]), /* japanese */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="创建"]), /* chinese simplified */
+/* chinese traditional works by itself */
+#buttons ytd-button-renderer:has(yt-button-shape > button[aria-label="建立"]), /* chinese hong kong */
 
 /* comments button in video fullscreen */
 .ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="Комментарии"]), /* ru */
 .ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="Comments"]), /* eng */
 .ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="コメント"]), /* japanese */
 .ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="댓글"]), /* korean */
-.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese traditional */
-.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese simplified */
-.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese hong kong */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="评论"]), /* chinese simplified */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="留言"]), /* chinese traditional */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="建立"]), /* chinese hong kong */
 
 /* share button in video fullscreen */
 .ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="Поделиться"]), /*  ru */
 .ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="Share"]), /* eng */
 .ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="共有"]), /* japanese */
 .ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="공유"]), /* korean */
-.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese traditional */
-.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese simplified */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="分享"]), /* chinese simplified */
+/* chinese traditional works by itself */
 .ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese hong kong */
-/* button “Thank you” below the video */
-yt-button-view-model:has(button[aria-label*="Спасибо"]), /* ru */yt-button-view-model:has(div[aria-label*="Спасибо"]),
-yt-button-view-model:has(button[aria-label*="Thanks"]), /* eng */yt-button-view-model:has(div[aria-label*="Thanks"]),
-/* japanese dont have thank you btn for some reason */
+
+/* “Thank you” button below the video */
+yt-button-view-model:has(button[aria-label*="Спасибо"]), /* ru */
+yt-button-view-model:has(div[aria-label*="Спасибо"]),
+yt-button-view-model:has(button[aria-label*="Thanks"]), /* eng */
+yt-button-view-model:has(div[aria-label*="Thanks"]),
+yt-button-view-model:has(button[aria-label*="感谢"]), /* chinese simplified */
+yt-button-view-model:has(div[aria-label*="感谢"]),
+yt-button-view-model:has(button[aria-label*="超級感謝"]), /* chinese traditional */
+yt-button-view-model:has(div[aria-label*="超級感謝"]),
+yt-button-view-model:has(button[aria-label*="感谢"]), /* chinese hong kong */
+yt-button-view-model:has(div[aria-label*="感谢"]),
+
 
 /* shorts tab on channel page */
 .tabGroupShapeTabs yt-tab-shape[tab-title="Shorts"], /* ru + eng */
 .tabGroupShapeTabs yt-tab-shape[tab-title="ショート"], /* japanese */
-.tabGroupShapeTabs yt-tab-shape[tab-title=""], /* chinese traditional */
 /* korean, japanese, chinese does not have shorts button on channel page */
 
 /* live tab on channel page */
@@ -98,8 +112,8 @@ yt-button-view-model:has(button[aria-label*="Thanks"]), /* eng */yt-button-view-
 .tabGroupShapeTabs yt-tab-shape[tab-title="Live"], /* eng */
 .tabGroupShapeTabs yt-tab-shape[tab-title="ライブ"],/* japanese */
 .tabGroupShapeTabs yt-tab-shape[tab-title="라이브"],/* korean */
-.tabGroupShapeTabs yt-tab-shape[tab-title=""],/* chinese traditional */
 .tabGroupShapeTabs yt-tab-shape[tab-title="直播"],/* chinese simplified */
+/* chinese traditional works by itself */
 .tabGroupShapeTabs yt-tab-shape[tab-title="直播"],/* chinese hong kong */
 
 /* posts tab on channel page */
@@ -107,9 +121,16 @@ yt-button-view-model:has(button[aria-label*="Thanks"]), /* eng */yt-button-view-
 .tabGroupShapeTabs yt-tab-shape[tab-title="Posts"],/* eng */
 .tabGroupShapeTabs yt-tab-shape[tab-title="投稿"],/* japanese */
 .tabGroupShapeTabs yt-tab-shape[tab-title="게시물"],/* korean */
-.tabGroupShapeTabs yt-tab-shape[tab-title=""],/* chinese traditional */
 .tabGroupShapeTabs yt-tab-shape[tab-title="帖子"],/* chinese simplified */
+/* chinese traditional works by itself */
 .tabGroupShapeTabs yt-tab-shape[tab-title="貼文"],/* chinese hong kong */
+
+/* become sponsor button on channel page */
+yt-flexible-actions-view-model[class="ytFlexibleActionsViewModelHost ytPageHeaderViewModelFlexibleActions ytPageHeaderViewModelFlexibleActionsMarginTop ytPageHeaderViewModelFlexibleActionsMarginBottom ytFlexibleActionsViewModelInline ytFlexibleActionsViewModelJustifyContentStart"] > div[class="ytFlexibleActionsViewModelAction"],
+
+/* shorts block on channel main page */
+#contents > ytd-reel-shelf-renderer,
+
 /* sidebar with simillar videos on video page */
 ytd-watch-flexy > #columns > #secondary {
 	display: none !important;
