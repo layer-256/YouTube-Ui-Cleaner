@@ -7,12 +7,34 @@
 ![Licenced](https://img.shields.io/badge/Licenced-red?style=for-the-badge&logo=creativecommons&logoColor=white)
 
 ## Features
-* **Decluttered Interface**</br>
-Removes a lot of stuff I personally dont use
-* **Cleaned Video Descriptions**</br>
-Strips away clutter like "Sponsor" and "Donate" buttons, along with AI analysis blocks
-* **Perfect Center**</br>
-Centers everything out in video view for a cleaner look
+* **Decluttered Interface**
+Removes a lot of stuff I personally dont use like:
+  * Buttons for content creators
+  * Sponsorship/Donation/Premium related buttons
+  * All tabs in channel except for All and Videos 
+  * Everything AI related
+  * Sidebar in video page with video recomendations
+  </br>
+* **New Elements**
+I added shortcuts for personally most used links to header.
+You can see it in showcase pictures below in this file.
+It is injected via JavaScript so its easily customized, you can load your own icons and add your own links to the header
+</br>
+* **Cleaned Video Descriptions**
+  * Strips away clutter like "Sponsor" and "Donate" buttons, along with AI analysis blocks
+</br>
+* **Perfect Center**
+  * Centers everything out in video view for a cleaner look
+</br>
+* **Languages support**
+  * Some CSS rules target the aria-label attribute, so they won't work with most other languages available on YouTube.
+    * Still works fine with:
+      * Russian
+      * English
+      * Chinese
+      * Japanese
+      * Korean
+
 ## Showcase (Before/After)
 
 ### Search input
