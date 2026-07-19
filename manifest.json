@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube cleaner ui",
+  "version": "1.0",
+  "description": "removes non necessery buttons for a day to day watch youtube, may remove stuff that may be usefor for someone buy i dont use it so it is what it is",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "css": ["YouTubeStyles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

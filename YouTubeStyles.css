@@ -1,0 +1,246 @@
+/* sponsor button i think, lol */
+#guide-button,
+/* Become a sponsor button (under the video) */
+#sponsor-button,
+/* Share button */
+#top-level-buttons-computed > yt-button-view-model:first-of-type,
+/* the ellipsis with the report and donation link below the video */
+body[extention-ellipsis-under-vid="true"] #button-shape,
+/* the voice input button (on the right of the search bar) */
+#voice-search-button,
+/* the on-screen keyboard input button (in the search bar) */
+.ytSearchboxComponentYtdTextInputAssistantWrapper,
+/* An AI summary in videos description */
+#video-summary,
+/* A sidebar with a bunch of buttons on the channel page */
+#guide,
+/* “Create” button in the header */
+#buttons ytd-button-renderer,
+/* about these results info in search results */
+#about-these-results,
+/* removes shorts chip button under search input in search results page */
+iron-selector[id="chips"] > yt-chip-cloud-chip-renderer:nth-of-type(2),
+/* removes shorts in filter search popup window */
+ytd-search-filter-options-dialog-renderer > #options > ytd-search-filter-group-renderer:nth-of-type(1) > ytd-search-filter-renderer:nth-of-type(2),
+/* removes second sidebar on the left (main page, shorts, subscribes, you) */
+#content > ytd-mini-guide-renderer[class="style-scope ytd-app"][role="navigation"],
+/* removes "Includes paid promotion" badge at the left top ov vids preview when you hover on it */
+div.ytInlinePlayerControlsControlsContainer > div.ytInlinePlayerControlsTopLeftControls,
+/* removes "Includes paid promotion" badge at the left top of videos thumbnail */
+div.ytp-overlay-top-left > div[class="ytp-paid-content-overlay"],
+/* notifications button in the header */
+#buttons ytd-notification-topbar-button-renderer,
+/* Video download button below the video for Premium users */
+.ytd-download-button-renderer,
+/* search button in the header */
+.ytSearchboxComponentSearchButton,
+/* Trash in the video description (How It Was Made, Voice-Overs, Episodes, Video Transcripts, Author's Playlists) */
+#description-inline-expander [slot="extra-content"],
+/* Removes the divider in the profile menu (in profile menu from header) */
+#sections yt-multi-page-menu-section-renderer:nth-child(2),
+/* deletes safe mode, current country and hotkeys buttons (in profile menu from header) */
+#items > ytd-compact-link-renderer:nth-of-type(3),
+#items > ytd-compact-link-renderer:nth-of-type(4),
+#items > ytd-compact-link-renderer:nth-of-type(5),
+/* removes shorts on search results */
+#contents > grid-shelf-view-model,
+/* removes ai slop review in some videos in search results  */
+#dismissible > div.text-wrapper.style-scope.ytd-video-renderer > #expandable-metadata,
+/* removes shorts and topics sectiopns from main page */
+#contents > ytd-rich-section-renderer,
+/* deletes "get more information" and "submit a review" buttons (in profile menu from header) */
+#sections > yt-multi-page-menu-section-renderer:nth-of-type(5),
+/* removes unnecessary buttons from the profile menu in the upper-right corner */
+ytd-compact-link-renderer:has(a[href*="/yourdata"]),
+ytd-compact-link-renderer:has(a[href*="/studio.youtube.com/"]),
+ytd-compact-link-renderer:has(a[href*="/paid_memberships?"]),
+.ytp-fullscreen-grid
+.ytp-fullscreen-grid-buttons-container,
+.ytp-gradient-bottom,
+/* the auto-play button for the next video in the player (Inside a Full-Screen Video) */
+div.ytp-autonav-toggle-button-container, button[data-tooltip-target-id="ytp-autonav-toggle-button"],
+/* left column in the “Watch Later” list  */
+.ytd-playlist-header-renderer,
+/* message stating that unavailable videos are hidden in “Watch Later” */
+ytd-alert-with-button-renderer[type="INFO"],
+/* Removing of Buttons "Comments" and "Share" (Inside a Full-Screen Video) */
+
+/* comments button in video fullscreen */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="Комментарии"]), /* ru */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="Comments"]), /* eng */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="コメント"]), /* japanese */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label="댓글"]), /* korean */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese traditional */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese simplified */
+.ytp-fullscreen-quick-actions toggle-button-view-model:has(button[aria-label=""]), /* chinese hong kong */
+
+/* share button in video fullscreen */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="Поделиться"]), /*  ru */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="Share"]), /* eng */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="共有"]), /* japanese */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label="공유"]), /* korean */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese traditional */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese simplified */
+.ytp-fullscreen-quick-actions button-view-model:has(button[aria-label=""]), /* chinese hong kong */
+/* button “Thank you” below the video */
+yt-button-view-model:has(button[aria-label*="Спасибо"]), /* ru */yt-button-view-model:has(div[aria-label*="Спасибо"]),
+yt-button-view-model:has(button[aria-label*="Thanks"]), /* eng */yt-button-view-model:has(div[aria-label*="Thanks"]),
+/* japanese dont have thank you btn for some reason */
+
+/* shorts tab on channel page */
+.tabGroupShapeTabs yt-tab-shape[tab-title="Shorts"], /* ru + eng */
+.tabGroupShapeTabs yt-tab-shape[tab-title="ショート"], /* japanese */
+.tabGroupShapeTabs yt-tab-shape[tab-title=""], /* chinese traditional */
+/* korean, japanese, chinese does not have shorts button on channel page */
+
+/* live tab on channel page */
+.tabGroupShapeTabs yt-tab-shape[tab-title="Трансляции"], /* ru */
+.tabGroupShapeTabs yt-tab-shape[tab-title="Live"], /* eng */
+.tabGroupShapeTabs yt-tab-shape[tab-title="ライブ"],/* japanese */
+.tabGroupShapeTabs yt-tab-shape[tab-title="라이브"],/* korean */
+.tabGroupShapeTabs yt-tab-shape[tab-title=""],/* chinese traditional */
+.tabGroupShapeTabs yt-tab-shape[tab-title="直播"],/* chinese simplified */
+.tabGroupShapeTabs yt-tab-shape[tab-title="直播"],/* chinese hong kong */
+
+/* posts tab on channel page */
+.tabGroupShapeTabs yt-tab-shape[tab-title="Записи"], /* ru */
+.tabGroupShapeTabs yt-tab-shape[tab-title="Posts"],/* eng */
+.tabGroupShapeTabs yt-tab-shape[tab-title="投稿"],/* japanese */
+.tabGroupShapeTabs yt-tab-shape[tab-title="게시물"],/* korean */
+.tabGroupShapeTabs yt-tab-shape[tab-title=""],/* chinese traditional */
+.tabGroupShapeTabs yt-tab-shape[tab-title="帖子"],/* chinese simplified */
+.tabGroupShapeTabs yt-tab-shape[tab-title="貼文"],/* chinese hong kong */
+/* sidebar with simillar videos on video page */
+ytd-watch-flexy > #columns > #secondary {
+	display: none !important;
+}
+
+/* custom buttons container in the header */
+.yt-clean-ui-ext-header-group {
+	display: inline-flex;
+	align-items: center;
+	padding: 12px 0 12px 10px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	height: 40px;
+}
+
+/* custom buttons in the header */
+.yt-clean-ui-ext-header-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	color: var(--yt-spec-text-primary, #fff);
+}
+
+/* Centers the channel page instead of aligning it to the right (after removing the sidebar) */
+#page-manager {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Input/Search in the header */
+.ytSearchboxComponentInputBox,
+.ytSearchboxComponentInputBoxDark {
+	border-right: 1px solid var(--ytd-searchbox-border-color, #303030) !important;
+	border-top-right-radius: 40px !important;
+	border-bottom-right-radius: 40px !important;
+}
+
+/* Input/Search in the header (Border When Focused) */
+.ytSearchboxComponentInputBoxHasFocus {
+	border-right: 1px solid var(--ytd-searchbox-border-color, #303030) !important;
+
+	border-top-right-radius: 40px !important;
+	border-bottom-right-radius: 40px !important;
+
+	border-right-color: #1c62b9;
+}
+
+/* Hover effect for custom buttons in the header */
+.yt-clean-ui-ext-header-btn:hover {
+	background-color: var(
+		--yt-spec-badge-chip-background,
+		rgba(255, 255, 255, 0.1)
+	);
+}
+
+/* Icons for custom buttons in the header */
+.yt-clean-ui-ext-header-btn svg {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+}
+
+/* Below are all the steps for removing the ads inside a full-screen video when you scroll down */
+#start.ytd-masthead {
+	min-width: 250px !important;
+}
+
+#container {
+	max-height: screen !important;
+}
+
+/* Centering videos on the home page */
+#chips-content.ytd-feed-filter-chip-bar-renderer {
+	justify-content: center !important;
+}
+
+/* Fix the column offset for the “Watch Later” video to the right */
+ytd-two-column-browse-results-renderer {
+	max-width: 60% !important;
+	min-width: 60% !important;
+	padding: 0 !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#page-header {
+	min-width: 60% !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-bottom: 6px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* Fixed the issue where videos were shifted to the left in the viewing history */
+ytd-two-column-browse-results-renderer[page-subtype="history"] > #primary {
+	padding-right: 0 !important;
+}
+
+/* gemini */
+/* Fix horizontal scrolling on the video page */
+ytd-watch-flexy[flexy] #primary.ytd-watch-flexy {
+	max-width: 100% !important;
+	min-width: 100% !important;
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+
+ytd-watch-flexy {
+	overflow-x: hidden !important;
+}
+
+html,
+body {
+	overflow-x: hidden !important;
+	max-width: 100vw !important;
+}
+/* /gemini */
+
+/* compensated lost padding on the search input box in header */
+#container
+	> #center
+	> yt-searchbox
+	> div[class='ytSearchboxComponentInputWrapper']
+	> div
+	> div {
+	padding-right: 16px !important;
+}
